@@ -38,11 +38,6 @@ def upload_file():
   result = loaded_model.predict([lst])
   print(result)
   lst=[result[0]]
-  test_list = ["Onion","Pumpkin","Grapes","Manioc","Tobacoo"]
-  rand_idx = random.randrange(len(test_list))
-  random_num = test_list[rand_idx]
-  lst.append(random_num)
-  print(lst)
   return jsonify(lst)
 
 @app.route('/fertilizer', methods=['GET'])
