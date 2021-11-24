@@ -1,3 +1,10 @@
+##################################################################################################
+
+#   Author : Mr. Hariharan Raveenthiran
+#   Flask Backend with ML models including a tflite model
+
+###################################################################################################
+
 from firebase import firebase
 from flask import Flask,jsonify,request
 from flask_ngrok import run_with_ngrok
