@@ -14,7 +14,7 @@ import requests
 
 app = Flask(__name__)
 run_with_ngrok(app)
-firebase = firebase.FirebaseApplication('https://text-to-cloud-default-rtdb.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('credentials_to_firebase', None)
 @app.route('/1')
 def index():
     return "Hello"
