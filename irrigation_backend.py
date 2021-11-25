@@ -68,7 +68,12 @@ def water_needed():
   print(result)
   return jsonify(str(result[0]))
 
-@app.route('/submit', methods=['POST','GET'])
+
+
+#######################################################################################
+##This api end point gets an image through POST request and uses that image to get prediction from the ML model that is in this server..
+#######################################################################################
+@app.route('/submit', methods=['POST'])
 def image_upload():
     dict1={}
     data = request.json
